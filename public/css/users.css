@@ -1,0 +1,25 @@
+.usersArticle{
+    display: flex;
+}
+
+.containerUser{
+    flex: 50%;
+    padding: 10px;
+}
+
+.usersImage {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.userT {
+    font-size: 18px;
+}
+
+
+
+
+@media (min-width: 362px) {
+
+}

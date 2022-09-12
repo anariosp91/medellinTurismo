@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="htmlTours" lang="en">
+
+<%- include("partials/head") %>
+
+
+<body class="body-tours">
+
+    <header class="main-header">
+        <%- include("partials/header") %>
+    </header>
+    <div class="bg-img">
+        <main class="main-tours">
+            <h2 class="titularTour"> Resultados de tu busqueda: <% if (locals.errorSearch) { %> <p style="color: red;">
+                    <%= locals.errorSearch %></p>
+                <p> Mira otros tours </p><% } %>
+            </h2>
+            <section class="sectionCard">
+                <%- include('./partials/tourCardV2') %>
+            </section>
+        </main>
+    </div>
+    <div class="footer">
+        <%- include('./partials/footer') %>
+    </div>
+
+</body>
+
+</html>

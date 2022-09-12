@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="htmlIndex" lang="en">
+
+<%- include("partials/head") %> 
+
+
+<body class="body-index">
+  <header class="main-header-index">
+    <%- include("partials/header") %> 
+</header>
+
+
+
+
+
+
+  <!-- CARRUCEL DE FOTOS PRINCIPAL -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.imgur.com/FRE7QHX.jpg?1" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>REPRESA DE GUATAPE</h5>
+          <p>Un lugar hermoso para visitar</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.imgur.com/zLjKkiY.jpg?1" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>PARQUE EXPLORA</h5>
+          <p>Un lugar lleno de aprendizajes y diversión</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.imgur.com/pgXoFjv.jpg?4" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>LA PIEDRA DEL PEÑOL</h5>
+          <p>Disfrutaras de una vista increíble</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.imgur.com/PHFu4kI.jpg?1" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>JARDÍN</h5>
+          <p>Conoce la cultura de este hermoso municipio</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.imgur.com/jfUrKMD.png?1" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>PARAPENTE</h5>
+          <p>Diversión Extrema</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+ 
+  <h2 class="tituloServicio" id="servicios">SERVICIOS</h2>
+  <section class="servicios">
+    <div class="servicio">
+      <h3>Asesoramiento</h3>
+      <p>Asesoramiento sobre qué lugares visitar, dependiendo del tiempo que tenga y las actividades que deseas.</p>
+    </div>
+    <div class="servicio">
+      <h3>Traslados</h3>
+      <p>Traslados desde el aeropuerto hasta el hotel o terminal y desde el hotel al tour.</p>
+    </div>
+    <div class="servicio">
+      <h3>Tours cortos</h3>
+      <p>Ofrecemos tours desde 2hs para aquellas personas que cuentan con poco tiempo para conocer la Ciudad.</p>
+    </div>
+    <div class="servicio">
+      <h3>Transporte ejecutivo</h3>
+      <p>Traslado por trabajo dentro y fuera de la Ciudad.</p>
+    </div>
+    <div class="servicio">
+      <h3>Tours</h3>
+      <p>Brindamos la posibilidad de conocer la Ciudad completa y todos sus alrededores en nuestras ofertas de tours
+      </p>
+    </div>
+    <div class="servicio">
+      <h3>Viajes intermunicipales</h3>
+      <p>Conozca los pueblos que conectan la cultura de Medellín.</p>
+    </div>
+  </section>
+ 
+  <%- include("partials/tourSection") %> 
+
+  <!-- SECCION DE CONTACTO -->
+  <section class="somos" id="quienesSomos">
+    <h2 class="tituloServicio">QUIENES SOMOS</h2>
+    <div class="nosotros">
+      <p>Nosotros ofrecemos servicios de transporte para personas recién llegadas
+        a Medellín, Colombia. Nuestro objetivo es que quienes nos elijan se sientan cómodas y
+        relajadas desde que bajan del avión hasta que se suben, nuevamente, para irse.
+        Si viene para disfrutar de la Ciudad o a trabajar estamos a su disposición para
+        transportarlo a dónde necesite con un servicio excepcional.</p>
+    </div>
+    <div class="mensaje" id="contactanos">
+      <article class="contactanos">
+        <h2 class="tituloServicio">Contáctanos</h2>
+        <p>Si tienes dudas o quieres más información sobre nuestros servicios, estamos para
+          ayudarle.¡Contáctenos para una mejor atención!</p>
+      </article>
+      
+      <!-- <form action="/prospectos" method="POST" class="formulario">
+        <div class="campo">
+          <label>Nombre:</label>
+          <input type="text" name="nombre" class="persona" required>
+        </div>
+        <div class="campo">
+          <label>Whatsapp:</label>
+          <input type="number" name="telefono" class="persona" required>
+        </div>
+        <div class="campo">
+          <label>Tipo de Servicio/Tour:</label>
+          <input type="text" name="servicio" class="persona">
+        </div>
+        <div class="campo">
+          <label>Correo electronico:</label>
+          <input type="email" name="email" class="persona" required>
+        </div>
+        <div class="campo">
+          <label>Mensaje:</label>
+          <textarea type="text" name="mensaje" class="persona" required></textarea>
+        </div>
+        <div class="botonEnviar">
+          <div class="buttonForm"> 
+            <button  class="myButton"> Enviar </button>
+          </div>
+        </div>
+      </form> -->
+      
+    </div>
+  </section>
+  <!-- BOTON DE WHATSAPP -->
+  <%- include("partials/wpp-button") %> 
+
+  <div class="footer">
+    <%- include("partials/footer") %>
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

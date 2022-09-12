@@ -1,0 +1,298 @@
+.body-cart {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+/* body */
+
+.body-cart i {
+  color: rgb(160, 160, 160);
+}
+
+/* tab design*/
+
+.t-container {
+  width: 100%;
+  max-width: 120em;
+}
+
+.t-container .t-tabs {
+  font-size: 20px;
+  font-weight: bolder;
+  list-style: none;
+  width: 95%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.t-container .cart-li {
+  padding: 1em;
+  margin: 0 1em 0 0;
+}
+
+.t-container .cart-li:hover {
+  cursor: pointer;
+  color: #7892c2;
+}
+
+.t-container .cart-li.activo {
+  border-bottom: solid 1px #000;
+}
+
+.t-container .sub-container {
+  min-height: 10vh;
+  position: relative;
+}
+
+.t-container .cart-section {
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 1em;
+  position: absolute;
+  opacity: 0;
+  bottom: 500px;
+  width: 95%
+}
+
+.t-container .cart-section.activo {
+  opacity: 1;
+  top: -30%;
+}
+
+
+/* Cart Tab */
+
+.classification {
+  background-color: rgba(33, 33, 33, 0.1);
+}
+
+.container-table {
+  display: flex;
+  box-shadow: 0px 0px 10px rgb(100 100 100);
+  padding: 2%;
+   margin: 2% 2% 5% 2%;
+}
+
+.article {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+.article th {
+  text-align: left;
+  padding: 5px 0px;
+  font-weight: 900;
+}
+
+.article td {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+.product-added {
+  border-bottom: 1px solid gray;
+}
+
+.article img {
+  width: 109px;
+  vertical-align: middle;
+}
+
+.article .people-counter {
+  max-width: 60px;
+  color: #000000;
+}
+
+.article .buy-button {
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 8px 8px;
+  background-color:#081454;
+}
+
+.article .buy-button:hover {
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    color:#ffffff;
+}
+
+.article .total-purchase td {
+  padding-top: 50px;
+  border-bottom: none;
+}
+
+.article .container-total-amount{
+  padding: 5px;
+  background-color: rgba(196, 196, 196, 0.5);
+}
+
+/* Fav Tab */
+
+.fav-articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 2% 2% 5% 2%;
+}
+
+.fav-articles article {
+  padding: 10px;
+}
+
+.fav-articles a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fav-articles h2 {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.fav-articles .product-description {
+  padding: 5px;
+}
+
+.fav-articles .reserve {
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 8px 8px;
+  background-color:#081454;
+}
+
+.fav-articles .reserve:hover {
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    color:#ffffff;
+}
+
+.fav-articles article img {
+  width: 224px;
+  height: 109px;
+  vertical-align: top;
+}
+
+/* Footer */
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 1023px) {
+
+
+
+  .container-table {
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: 5%;
+  }
+
+  .t-container .cart-li {
+    padding: 10px;
+    margin: 1%;
+  }
+
+  .t-container .sub-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Cart Tab*/
+
+  .article img {
+    width: 40%;
+    vertical-align: bottom;
+  }
+
+  .fav-article img {
+    width: 40%;
+  }
+
+  .article {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .article tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px gray;
+  }
+
+  .article thead {
+    display: none;
+  }
+
+  .article td[data-titulo] {
+    display: flex;
+
+  }
+
+  .article td {
+    padding: 2% 4%;
+    margin-bottom: 2%;
+    flex-direction: column;
+  }
+
+  .article td[data-titulo]::before {
+    content: attr(data-titulo);
+    width: 90%;
+    color:#081454;
+    font-weight: bold;
+    padding: 3% 0;
+  }
+
+  .article .total-purchase td {
+    padding-top: 5px;
+    border-bottom: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+
+
+  /* Body */
+
+  .article .tour-name {
+    display: block;
+  }
+
+  .article .buy-button {
+    font-size: 14px;
+  }
+
+  .article img {
+    width: 50%;
+  }
+
+  .fav-article img {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1200px) {
+
+  /* Body */
+  .article .tour-name {
+    display: contents;
+  }
+}
+

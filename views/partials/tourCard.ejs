@@ -1,0 +1,13 @@
+<% tours.forEach(tour => { %>
+<article class="toursDetail">
+    <a href="/tours/detail/<%= tour.id %> " class="ref">
+        <img src="/img/products/<%= tour.image1 %> ">
+        <div class="detalleT">
+            <h4 class="nombreT"><%= tour.title %> </h4>
+            <p class="precioT"> Precio por grupo de máximo 8 personas <%= tour.price %> </p>
+            <p class="descripcionT"><%= tour.short_description %> </p>
+            <p class="duracionT">Duración aproximada del tour: <%= tour.duration %> </p>
+        </div>
+    </a>
+</article>
+<% }) %>

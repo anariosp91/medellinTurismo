@@ -1,0 +1,109 @@
+.maincontainer {
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+	flex-direction: column;
+}
+
+.contenedor1 {
+	margin: 0;
+	padding: 5%;
+	align-self: center;
+	border-radius: 5%;
+	box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	width: 90%;
+	margin-bottom: 10%;
+}
+
+.contenedor2 {
+	margin: 0;
+	padding-top: 3%;
+	margin-left: 5%;
+}
+
+.reloj {
+	font-size: 150%;
+}
+
+.horario {
+	display: flex;
+}
+
+.margen {
+	margin-left: 10px;
+}
+
+.myButton {
+	background-color: #081454;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: "Fira Sans";
+	font-size: 20px;
+	font-weight: bold;
+	padding: 13px 32px;
+	text-decoration: none;
+	margin: 10px 0px;
+	min-width: 100%;
+	text-align: center;
+}
+
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	color: #ffffff;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.containerEdit {
+	display: inline-block;
+}
+
+.formDelete {
+	display: inline-block;
+}
+
+.deleteButton {
+	background-color: #030804;
+}
+
+.deleteButton:hover {
+	background: linear-gradient(to bottom, rgb(218, 71, 71)  5%,rgb(32, 10, 10) 100%);
+}
+
+.editButton {
+	background-color: #3936ffad;
+}
+
+.editButton:hover {
+	background: linear-gradient(to bottom, rgb(71, 105, 218)  5%,rgb(46, 49, 192) 100%);
+}
+
+.Color2 {
+	background-color: #545f9e;
+}
+
+
+/*Media*/
+
+@media (min-width: 1024px) {
+	.maincontainer {
+		flex-direction: row;
+	}
+	.contenedor1 {
+		width: 35%;
+		padding: 3%;
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	.contenedor1 {
+		width: 27%;
+	}
+}
